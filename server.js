@@ -5,7 +5,7 @@ let PORT = process.env.PORT || 8080;
 
 
 
-const app = express();
+let app = express();
 
 // app.get('/', function (req, res) {
 //     res.send('Hello World')
@@ -14,10 +14,12 @@ const app = express();
 
 
 // parse application/x-www-form-urlencoded
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
 
 // parse application/json
 app.use(bodyParser.json());
+
+
 
 // app.use(function (req, res) {
 //     res.setHeader('Content-Type', 'text/plain');

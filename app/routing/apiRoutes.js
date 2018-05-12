@@ -1,12 +1,12 @@
-let friends = require("../data/friends.js");
+let friends = require("../data/friends");
 let path = require('path');
 
 module.exports = function (app) {
-    app.get('api/friends', function (req, res) {
+    app.get('/api/friends', function (req, res) {
         res.json(friends);
     });
 
-    app.post('api/friends', function (req, res) {
+    app.post('/api/friends', function (req, res) {
 
         let number = 1000000;
         let perfectMatch;
@@ -25,8 +25,10 @@ module.exports = function (app) {
                 number = matchScore;
                 perfectMatch = friends[i];
             }
-        }
+            }
 
+
+        console.log(perfectMatch)
         res.json(perfectMatch);
 
         friends.push(req.body);

@@ -1,4 +1,4 @@
-let friendsArray = [(
+let friendsArray = [
     {
         name: "George Washington",
         photo: "https://www.factslides.com/imgs/washington2.jpg",
@@ -40,6 +40,6 @@ let friendsArray = [(
         photo: "http://www.renegadetribune.com/wp-content/uploads/2017/08/ba8a0875eed7ec8cf564b541298fa079-e1502544818791.jpg",
         scores: [1, 2, 3, 4, 5, 4, 3, 2, 1, 5]
     }
-)];
+];
 
 module.exports = friendsArray;
