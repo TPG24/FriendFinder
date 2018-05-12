@@ -25,8 +25,10 @@ app.use(bodyParser.json());
 //     res.end(JSON.stringify(req.body, null, 2))
 // });
 
+
+require('./app/routing/apiRoutes.js')(app);
 require('./app/routing/htmlRoutes.js')(app);
-// require('./app/routing/apiRoutes.js')(app);
+
 
 
 
