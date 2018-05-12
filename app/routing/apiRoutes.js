@@ -28,7 +28,7 @@ module.exports = function (app) {
             }
 
 
-        console.log(perfectMatch)
+        console.log(perfectMatch);
         res.json(perfectMatch);
 
         friends.push(req.body);
